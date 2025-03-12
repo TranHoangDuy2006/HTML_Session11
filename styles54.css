@@ -1,0 +1,82 @@
+.header-box, .footer-box
+{
+    width: 100%; height: 200px; background-color: #a60162;
+}
+
+.small-box
+{
+    width: 50%; height: 100px; background-color: #db317f; margin-right: 20px;
+}
+
+.small-box:last-child
+{
+    margin-right: 0;
+}
+
+.body
+{
+    width: 100%; height: 200px; background-color: #ffffff; display: flex; margin: 20px 0 20px 0;
+}
+
+.head
+{
+    width: 100%; height: 100px; background-color: #ffffff; display: flex; margin: 20px 0 20px 0;
+}
+
+.medium-box
+{
+    width: 50%; height: 200px; background-color: #de5d9e; margin-right: 20px;
+}
+
+.custom
+{
+    height: 200px;
+}
+
+.medium-box:last-child
+{
+    margin-right: 0;
+}
+
+.lighter
+{
+    background-color: #f3a5d1;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .head 
+    {
+        display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; padding: 10px 0 10px 0; margin-bottom: 20px;
+    }
+    
+    .small-box 
+    {
+        width: 100%;
+    }
+
+    .body.custom 
+    {
+        margin: 140px 0 20px 0;
+    }
+
+    .medium-box
+    {
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 480px)
+{
+    .head 
+    {
+        display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 20px; padding: 10px 0 10px 0; margin-bottom: 20px;
+    }
+
+    .body.custom 
+    {
+        margin-top: 380px;
+    }
+    
+}

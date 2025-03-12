@@ -1,0 +1,58 @@
+.header
+{
+    width: 100%; height: 100px; background-color: #78bcbe; 
+}
+
+.body
+{
+    width: 100%; height: 100%; background-color: #f8f8f8; display: flex;
+}
+
+.rectangle
+{
+    width: 50%; height: 200px; background-color: #eb5c48;
+}
+
+.color
+{
+    background-color: #f1a110;
+}
+
+.footer
+{
+    width: 100%; height: 400px; background-color: #ffffff; display: flex;
+}
+
+.square
+{
+    width: calc(100% / 3); height: 500px; background-color: #11385a;
+}
+
+.color-1
+{
+    background-color: #ed7b71;
+}
+
+@media only screen and (max-width: 1024px) 
+{
+    .body 
+    {
+        flex-direction: column; height: auto;
+    }
+
+    .rectangle
+    {
+        width: 100%; height: 200px;
+    }
+
+    .footer
+    {
+        width: 100%; height: 400px; display: flex; flex-direction: column;
+    }
+
+    .square
+    {
+        width: 100%; height: 200px;
+    }
+    
+}
